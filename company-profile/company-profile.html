@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Kanit', sans-serif;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+
+    section h1 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+    
+    h3 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero-section {
+      height: 100vh;
+      background-image: url('assets/hero-image.jpeg');
+      align-items: flex-start;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      display: inline-block;
+      font-size: 80px;
+    }
+
+    .hero-section p {
+      display: inline-block;
+      font-size: 50px;
+    }
+
+    .hero-section button {
+      margin-top: 25px;
+      font-size: 35px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      padding: 10px 60px;
+      border-radius: 50px;
+    }
+
+    .product-section {
+      background-color: #d53c05;
+      color: white;
+    }
+
+    .about-section {
+      text-align: center;
+    }
+
+    .box{
+      margin: auto auto 50px auto;
+      width: 500px;
+      height: 500px;
+      text-align: center;
+      position: relative;
+    }
+
+    .box img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .box .box-content {
+      position: absolute;
+      bottom: -50px;
+      left: 50px;
+      right: -50px;
+      color: white;
+      background-color: #efb190;
+      text-align: left;
+      padding: 0 40px;
+    }
+    
+    .box .box-content p {
+      font-size: 20px;
+    }
+    
+    .box .box-content h3 {
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    .box-row {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
+
+    .box-row .box {
+      max-width: 50%;
+    }
+    
+    .card-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card {
+      width: 33.33%;
+    }
+
+    .card img {
+      width: 100%;
+      min-height: 300px;
+      object-fit: cover;
+    }
+
+    .card p {
+      font-size: 20px;
+    }
+
+    .order-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .order-button button {
+      font-size: 35px;
+      border: none;
+      background-color: #d53c05;
+      color: white;
+      cursor: pointer;
+      padding: 10px 60px;
+      border-radius: 50px;
+    }
+
+    .footer {
+      background-color: #5d0705;
+      color: #f9c98d;
+    }
+
+    .footer p {
+      font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <section class="hero-section">
+      <div class="container">
+        <h1>COMPANY NAME</h1>
+        <p>Our oranges: ripe, refreshing, and full of flavor!"</p>
+        <button>
+          Order Now
+        </button>
+      </div>
+    </section>
+    <section class="about-section">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>
+          Our company is dedicated to producing the freshest, highest-quality oranges for our customers. We are a family-owned and operated business, located in the heart of orange country in sunny Berastagi.
+        </p>
+        <p>
+          Our oranges are grown using sustainable farming practices and are hand-picked at the peak of ripeness to ensure the best flavor and nutrition. We take pride in our attention to detail and are committed to providing our customers with the best oranges available.
+        </p>
+        <p>
+          Thank you for choosing our oranges and supporting our business. We hope you enjoy our products as much as we enjoy bringing them to you.
+        </p>
+        <div class="box">
+          <img src="assets/hero-image.jpeg" alt="product-image">
+          <div class="box-content">
+            <h3>Berastagi Oranges</h3>
+            <p>Berastagi oranges, also known as Mandarin oranges or tangerines, are a type of citrus fruit native to Indonesia. They are small and round, with a thin, easy-to-peel skin that ranges in color from orange to yellow. Berastagi oranges are known for their sweet, juicy flesh and easy-to-eat segments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-section">
+      <div class="container">
+        <h1>Introducing ourself</h1>
+        <div class="box-row">
+          <div class="box">
+            <img src="assets/our-farm.jpeg" alt="farm-picture">
+            <div class="box-content">
+              <h3>Our Farm</h3>
+              <p>These oranges are grown in the town of Berastagi, located in the Karo Regency of North Sumatra, Indonesia. They are a popular variety of orange in the region and are known for their high quality and taste.</p>
+            </div>
+          </div>
+          <div class="box">
+            <img src="assets/our-farmer.jpeg" alt="farmer-picture">
+            <div class="box-content">
+              <h3>Our Farmer</h3>
+              <p>Our farmer are responsible for planting, watering, and caring for orange trees, as well as harvesting the fruit when it is ripe. Our farmer use traditional or modern techniques to grow and care for the trees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flow-section">
+      <div class="container">
+        <h1>Why you should choose us?</h1>
+        <div class="card-grid">
+          <div class="card">
+            <img src="assets/flow1.jpeg" alt="flow-picture-1">
+            <p>We choose the best oranges for you, and you can request the size and color of your choosing!</p>
+          </div>
+          <div class="card">
+            <img src="assets/flow2.jpeg" alt="flow-picture-1">
+            <p>We package your oranges with special box to make sure the orange is safe until it arrive in your place</p>
+          </div>
+          <div class="card">
+            <img src="assets/flow3.jpeg" alt="flow-picture-1">
+            <p>We choose the best delivery option to make sure your oranges arrive safe and on time</p>
+          </div>
+        </div>
+        <div class="order-button">
+          <button>
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <p>@copyright by MIT</p>
+    </section>
+</body>
+</html>
